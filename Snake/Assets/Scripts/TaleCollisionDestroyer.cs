@@ -12,7 +12,7 @@ public class TaleCollisionDestroyer : MonoBehaviour
         if (repeater != null)
         {
             Debug.LogError("Вы проиграли, очень жаль!");
-            Destroy(transform.parent.gameObject);
+            Destroy(transform.parent.parent.gameObject);
         }
     }
 }
