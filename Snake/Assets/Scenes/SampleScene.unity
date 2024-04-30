@@ -225,8 +225,10 @@ GameObject:
   m_Component:
   - component: {fileID: 623661040}
   - component: {fileID: 623661039}
+  - component: {fileID: 623661041}
+  - component: {fileID: 623661042}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Snake
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -274,7 +276,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 10
   m_Sprite: {fileID: 7482667652216324306, guid: aabe4974499aa4947a7f3b5ccfbf221a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.23113209, g: 1, b: 0.2777301, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -293,12 +295,42 @@ Transform:
   m_GameObject: {fileID: 623661038}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.9071188, y: -0.77369666, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &623661041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623661038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e16d26dfd6515a438d95a48db4f9f6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _delay: 0.05
+  _tale: {fileID: 0}
+--- !u!114 &623661042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623661038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d65e5b49635ca24eabec8edca3c6981, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _leftKeyCode: 0
+  _rightKeyCode: 0
+  _downKeyCode: 0
+  _forwardKeyCode: 0
 --- !u!1 &1257724598
 GameObject:
   m_ObjectHideFlags: 0
